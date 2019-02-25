@@ -69,18 +69,18 @@ class BismillahSource{
                                                 HP    = '$y',
                                                 ALAMAT_LENGKAP = '$z'";
         //echo $sql;
-        $hasil = mysqli_query($this->Koneksi(),$sql);
+        $hasil = mysqli_query($this->Koneksi(),$sqls);
        
       
         if($hasil){
             echo "<script>alert('Save Alamat Berhasil..')</script>";
-            echo "<script>window.location='../engine/adminjos/xtreme-html/ltr/index.php';</script>";  
+            echo "<script>window.location='index.php';</script>";  
 
         }
         else{
 
             echo "<script>alert('Save tidak berhasil, cek koneksi anda....!, mohon Coba kembali')</script>";
-            echo "<script>window.location='/engine/adminjos/xtreme-html/ltr/alamat-baru.php'</script>";
+            echo "<script>window.location='alamat-baru.php'</script>";
         }
         //echo $result['USER'];
 
